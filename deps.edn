@@ -1,0 +1,6 @@
+{:paths ["src"]
+ :deps {org.clojure/clojure {:mvn/version "1.12.0-rc1"}
+        nextjournal/clerk-slideshow {:git/url "https://github.com/nextjournal/clerk-slideshow"
+                                     :git/sha "11a83fea564da04b9d17734f2031a4921d917893"}
+        nextjournal/clerk {:git/url "https://github.com/nextjournal/clerk"
+                           :git/sha "66781f796ca7a4d69145d0f44c57a0963c5dbd52"}}}
