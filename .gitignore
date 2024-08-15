@@ -3,3 +3,6 @@
 .lsp
 .portal
 .vscode
+.clerk
+.nrepl-port
+.calva
