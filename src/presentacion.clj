@@ -33,6 +33,8 @@
 ;; * y la Computación en la nube (*Cloud Computing*).
 
 
+
+
 ;;---
 (ImageIO/read (io/input-stream "resources/w3c-logo-small.png"))
 ;; ## ¿Qué es la Web? 
@@ -64,6 +66,8 @@
                        {:ref (fn [el] (when el
                                         (.render mermaid (str (gensym)) value #(set! (.-innerHTML el) %))))}])]))})
 
+
+
 ;;---
 ;; ## ¿Cómo funciona el navegador? 🔎
 ;; Un navegador es una herramienta ubicua en nuestro día a día y es una de las piezas de ingeniería más extraordinarias.
@@ -85,6 +89,8 @@
     re --> js[Intérprete/compilador de JavaScript]")
 
 
+
+
 ;;---
 ;; ## La interfaz gráfica 🗔
 ;; Esta es la parte del navegador que se encarga de mostrar la información al usuario. Es la parte del navegador con la que 
@@ -93,6 +99,8 @@
 ;; Acá vemos los controles para avanzar o retroceder, ir al home, recargar, favoritos, configuración, barra de direcciones, etc.
 ;; Y, por supuesto, el contenido de la página que has solicitado.
 (ImageIO/read (io/input-stream "resources/navegador.png"))
+
+
 
 ;; ---
 ;; ## La red o networking 🖧
@@ -120,6 +128,7 @@
 ;; información que hemos solicitado. 
 
 
+
 ;;---
 ;; ## Motores de navegación 🚢
 ;; El motor de navegación, como su nombre lo sugiere, es el corazón del navegador; es el que hace parte esencial del trabajo.
@@ -128,6 +137,8 @@
 ;; coordina los flujos de información entre la interfaz del usuario, el motor de renderización y otros componentes.
 
 ;; Los más utilizados son Gecko (Mozilla), Blink (Chrome) y Webkit.
+
+
 
 ;;---
 ;; ## Motores de renderización 🎨
@@ -151,6 +162,7 @@
 ;; los elementos estéticos de la página, mientras que el HTML se encarga de la diagramación y formato. 
 
 
+
 ;; ---
 ;; ### JavaScript
 ;; JavaScript es un **lenguaje de programación** diseñado especialmente para la Web. 
@@ -171,8 +183,10 @@
 ;; Con JavaScript puedes añadir, sustraer ó modificar dinámicamente cualquier elemento de la página web 
 ;; (texto, estilo, ubicación, lo que quieras).
 
+
+
 ;; ---
-;; ## ¿Qué hace entonces un motor de renderización?
+;; ## ¿Qué hace entonces un motor de renderización? 🖌
 ;; El motor de renderización toma los datos de la página web (es decir, todo el HTML, CSS y JavaScript)
 ;; como bytes, esto es, como unos y ceros y luego: 
 ;; 1. Paralelamente, toma por un lado el HTML y por otro el CSS y el JavaScript. 
@@ -204,8 +218,9 @@
    rt --> pt[Pintar ó Painting]
    pt --> cnt[Mostrar contenido]")
 
+
 ;; ---
-;; ## Comprendiendo el DOM
+;; ## Comprendiendo el DOM 🗎
 ;; Con la finalidad de que un lenguaje de programación pueda interactuar con los contenidos representados por el HTML y con los eventos producto de la interacción del usuario 
 ;; con el mismo, la W3C creó una especificación denominada *Document Object Model*. Se trata una representación agnóstica
 ;; (es decir que pretende ser neutral frente a los distintos lenguajes y plataformas) del documento HTML como un árbol de objetos.
@@ -216,8 +231,9 @@
 ;; 3. los **métodos** para acceder a los elementos HTML
 ;; 4. los **eventos** para todos los elementos HTML. 
 
+
 ;; ---
-;; ## Fuentes
+;; ## Fuentes 📚
 ;; 1. https://web.dev/articles/howbrowserswork?hl=es-419#preface
 ;; 2. https://www.dailyfrontend.com/articles/browsers-and-how-they-work
 ;; 3. https://www.browserstack.com/guide/what-is-browser
